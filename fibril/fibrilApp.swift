@@ -4,7 +4,7 @@
 //
 //  Created by Nicholas Conant-Hiley on 5/17/24.
 //
-
+import SwiftData
 import SwiftUI
 
 @main
@@ -13,5 +13,6 @@ struct fibrilApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Word.self)
     }
 }
